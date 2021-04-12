@@ -10,19 +10,12 @@ let seznamJmen = ["Mamka", "Tatka", "Já", "Brácha", "Pes"];
 vypisText(seznamJmen);
 
 
-
-
-
 // Úkol 2 - Vypiš třetí jméno v pořadí
 // Nezapomeň, že pole se čísluje od 0
 
 // let tretiPozice = seznamJmen[2];
 // console.log(tretiPozice);
 vypisText("Nejpřísnější páníček: " + seznamJmen[2]);
-
-
-
-
 
 
 // Úkol 3 - Kolik jmen je v poli?
@@ -33,9 +26,6 @@ vypisText("Nejpřísnější páníček: " + seznamJmen[2]);
 vypisText("Kolik je nás doma: " + seznamJmen.length);
 
 
-
-
-
 // Úkol 4 - Vypiš znovu seznam jmen, ALE...
 // Tentokrát použij cyklus .forEach() a před každé jméno přidej
 // číslo indexu, na kterém se jméno nachází
@@ -43,14 +33,7 @@ vypisText("Kolik je nás doma: " + seznamJmen.length);
 // 1. Jana
 // 2. Marie
 // atd.
-function vypisJmenaSPoradim(ele, inx){
-    vypisText(inx + 1 + ". " + ele)
-}
-
 seznamJmen.forEach(vypisJmenaSPoradim);
-
-
-
 
 
 // Úkol 5 - přidej na konec pole další jméno
@@ -63,13 +46,11 @@ seznamJmen.push("Babka");
 vypisText(seznamJmen);
 
 
-
-
-
 // Úkol 6 - odeber z pole první a poslední jméno a vypiš
 // obě jména a pak i výsledné pole
 // pole.shift()
 // pole.pop()
+
 // seznamJmen.shift(0);
 // seznamJmen.pop(5);
 // console.log(seznamJmen);
@@ -81,14 +62,11 @@ vypisText(seznamJmen);
 
 
 
-
-
-
-
-
-
-
-// *********************************************
+// deklarace funkcí
 function vypisText(txt) {
     document.querySelector('#vystup').innerText += txt + '\n';
+}
+
+function vypisJmenaSPoradim(ele, inx){
+    vypisText(inx + 1 + ". " + ele)
 }
